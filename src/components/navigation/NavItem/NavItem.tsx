@@ -1,12 +1,12 @@
 import tinycolor from 'tinycolor2';
 import Flexbox from 'flexbox-react';
-import React, { CSSProperties, Fragment } from 'react';
+import * as React from 'react';
 import ThemeContext from '../../../themes/context';
 
 interface INavItemProps {
     children: React.ReactNode,
     href: string,
-    padding: CSSProperties['padding'],
+    padding: React.CSSProperties['padding'],
 }
 
 interface INavItemStates {
@@ -46,14 +46,8 @@ class NavItem extends React.Component<INavItemProps, INavItemStates> {
 
     render() {
         const {
-            context: {
-                colors,
-            },
-            props: {
-                children,
-                href,
-                padding,
-            },
+            context: { colors },
+            props: { children, href, padding },
         } = this;
 
         let bgColor = this.state.hovered ? colors.secondary : colors.primary;

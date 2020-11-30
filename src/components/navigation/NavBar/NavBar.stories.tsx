@@ -1,4 +1,3 @@
-
 import * as React from 'react';
 import NavItem from '../NavItem';
 import NavBar from '.';
@@ -10,7 +9,7 @@ export default {
         justifyContent: {control: 'text'},
         height: {control: {type: 'range', min: 40, max: 400, step: 5}},
     }
-};
+}
 
 export const NavBarExample = (args) => (
     <NavBar {...args}>

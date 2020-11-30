@@ -14,5 +14,10 @@
         "**/.DS_Store": true,
         ".history": true
     },
-    "explorerExclude.backup": null
+    "explorerExclude.backup": null,
+    "god.tsconfig": "./tsconfig.json",
+    "xd.lastPackage": "/home/papibenjie/projects/react/ts-maq/src/components/TestXD",
+    "xd.globalEditor": true,
+    "CoffeeGenerator.branch": "master",
+    "CoffeeGenerator.clientId": "98963e0cd674f282a9e2d02a753a03de7ad6856b50d6a70f881239da699abe35"
 }

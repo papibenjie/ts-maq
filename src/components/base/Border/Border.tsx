@@ -2,6 +2,7 @@
 import * as React from 'react';
 import { CssColor, CssLength, CssBorderStyle } from '../../../utils/cssTypes';
 import Flexbox from 'flexbox-react';
+import { EBorderStyle } from '../../../utils/cssEnums';
 
 interface IBorderProps {
     borderColor?: CssColor,
@@ -20,7 +21,7 @@ class Border extends React.Component<IBorderProps> {
         borderColor: "black",
         borderRadius: "0",
         borderWidth: "1px",
-        borderStyle: "solid",
+        borderStyle: EBorderStyle.Solid,
         style: {},
         padding: "0",
         margin: "0",
@@ -46,7 +47,7 @@ class Border extends React.Component<IBorderProps> {
             },
         } = this;
 
-        let styles : CSSProperties = {
+        let styles : React.CSSProperties = {
             borderColor: bdColor,
             borderRadius: bdRadius,
             borderWidth: bdWidth,

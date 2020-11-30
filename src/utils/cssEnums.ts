@@ -1,10 +1,10 @@
-enum EBase {
+export enum EBase {
     None = 'none',
     Initial = 'initial',
     Inherit = 'inherit',
 }
 
-enum EBorderStyle {
+export enum EBorderStyle {
     Hidden = 'hidden',
     Dotted = 'dotted',
     Dashed = 'dashed',
@@ -15,5 +15,3 @@ enum EBorderStyle {
     Inset = 'inset',
     Outset = 'outset',
 } 
-
-export const ECssBorderStyle = { ...EBase, ...EBorderStyle }

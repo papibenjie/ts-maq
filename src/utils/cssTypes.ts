@@ -1,9 +1,10 @@
 import * as React from 'react';
-import { ECssBorderStyle } from './cssEnums';
+import { EBase, EBorderStyle } from './cssEnums';
+
+export type CssColor = string;
+
+export type CssLength = string;
 
 
-export type CssLength = string & {};
-
-export type CssColor = React.CSSProperties["color"];
-
-export type CssBorderStyle = typeof ECssBorderStyle;
+const _CssBorderStyle = { ...EBase, ...EBorderStyle };
+export type CssBorderStyle = typeof _CssBorderStyle;
