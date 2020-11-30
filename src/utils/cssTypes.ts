@@ -1,15 +1,9 @@
-import { CSSProperties } from 'react';
+import * as React from 'react';
 import { ECssBorderStyle } from './cssEnums';
 
 
-export interface CssLength {
-    length: string & {},
-}
+export type CssLength = string & {};
 
-export interface CssColor {
-    CSSProperties['color'],
-}
+export type CssColor = React.CSSProperties["color"];
 
-export interface CssBorderStyle {
-    ECssBorderStyle
-}
+export type CssBorderStyle = typeof ECssBorderStyle;

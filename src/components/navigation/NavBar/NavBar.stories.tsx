@@ -1,7 +1,7 @@
 
-import React, {Fragment} from 'react';
-import NavItem from '../NavItem/NavItem';
-import NavBar from './NavBar';
+import * as React from 'react';
+import NavItem from '../NavItem';
+import NavBar from '.';
 
 export default {
     title: 'Components/NavBar',

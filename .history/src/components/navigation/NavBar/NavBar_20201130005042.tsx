@@ -1,14 +1,17 @@
 
 import Flexbox from 'flexbox-react';
-import React, { CSSProperties, Fragment } from 'react';
+import * as React from 'react';
 import ThemeContext from '../../../themes/context';
 import tinycolor from 'tinycolor2';
+import { CssLength } from '../../../utils/cssTypes';
 
 interface INavBarProps {
-    justifyContent?: CSSProperties['justifyContent'],
-    height?: CSSProperties['height'],
+    justifyContent?: React.CSSProperties['justifyContent'],
+    height?: CssLength,
     children: React.ReactNode;
 }
+
+
 
 class NavBar extends React.Component<INavBarProps> {
 
